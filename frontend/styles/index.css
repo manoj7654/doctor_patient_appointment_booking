@@ -9,26 +9,30 @@
 }
 
 .main{
-    height: 100px;
+    height: 70px;
    
     /* background-color: aqua; */
-    border: 1px solid grey;
+    /* border: 1px solid red; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color:darkgrey;
+    border-radius: 5px;
    
 }
 .header{
     display: flex;
     justify-content: space-between;
     /* border: 1px solid grey; */
-    height: 100px;
+    height: 50px;
     align-items: center;
     width: 90%;
     margin: auto;
+
     /* background-color: aqua; */
    
 }
 .logo img{
-    width: 25%;
-    color: aqua;
+    width: 15%;
+   margin-top: 15px;
 }
 .navbar{
     width: 70%;
@@ -37,10 +41,16 @@
     /* border: 1px solid red; */
     font-size: 2rem;
     /* background-color: blue; */
+    margin-top: 10px;
    
 }
 .navbar ul li{
     padding:0px 20px
+}
+.navbar ul li :hover{
+    background-color: rgb(163, 156, 156);
+    border-radius: 10px;
+
 }
 .navbar ul li a{
     color:black;
@@ -62,6 +72,18 @@
     display: none;
 }
 #second{
-    height: 400px;
-    background-color: aqua;
+    height: 600px;
+  
+    margin-top: 10px;
+    background-image: url("https://images.unsplash.com/photo-1538108149393-fbbd81895907?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80");
+    background-size: cover;
+  
+}
+#second h1{
+  
+    text-align: center;
+    /* border: 1px solid red; */
+    padding-top: 280px;
+    color:blue
+    
 }

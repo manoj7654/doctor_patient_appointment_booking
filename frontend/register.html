@@ -10,20 +10,22 @@
     <div class="main">
         <header class="header">
             <div class="logo">
-                <img src="https://www.linkpicture.com/q/Screenshot_2023-06-22-10-45-16-518_com.android.chrome-edit.jpg" alt="">
+               <a href="index.html"> <img src="https://www.linkpicture.com/q/Screenshot_2023-06-22-10-45-16-518_com.android.chrome-edit.jpg" alt=""></a>
             </div>
             <input type="checkbox" id="hamburger">
             <nav class="navbar">
                 <ul>
-                    <li><a href="">Register</a></li>
+                    <li><a href="register.html">Register</a></li>
                 </ul>
                 <ul>
                     <li><a href="login.html">Login</a></li>
                 </ul>
                 <ul>
-                    <li><a href="appointment.html">Appointment</a></li>
+                    <li><a href="doctor.html">Doctor</a></li>
                 </ul>
-                
+                <ul>
+                    <li><a href="">Appointment</a></li>
+                </ul>
             </nav>
             <div class="check">
                 <label for="hamburger">
@@ -33,6 +35,7 @@
                 </label>
             </div>
         </header>
+        
     </div>
     <div class="option">
         <button class="patient">Patient</button>
@@ -40,17 +43,17 @@
     </div>
     <div id="patient">
         <h1>Patient Register Form</h1>
-    <form action="">
+    <form id="form1">
       
-     <input type="text" name="name" id="" placeholder="Enter patient name">
+     <input type="text" name="name" id="name" placeholder="Enter patient name">
      <br>
      <br>
    
-     <input type="text" name="email" id="" placeholder="Enter patient email">
+     <input type="text" name="email" id="email" placeholder="Enter patient email">
      <br>
      <br>
    
-     <input type="text" name="password" id="" placeholder="Enter password">
+     <input type="text" name="password" id="password" placeholder="Enter password">
      <br>
      <br>
      
@@ -63,7 +66,7 @@
      <br>
      <br>
     
-      <input type="text" name="location" id="" placeholder="Enter patient location">
+      <input type="text" name="location" id="location" placeholder="Enter patient location">
       <br>
       <br>
      <input type="submit" name="" id="register" value="Register">
@@ -71,30 +74,30 @@
     </div>
     <div id="doctor">
         <h1>Doctor Register Form</h1>
-        <form action="">
+        <form id="form2">
       
-         <input type="text" name="name" id="" placeholder="Enter patient name">
+         <input type="text" name="name" id="name1" placeholder="Enter doctor name">
          <br>
          <br>
          
-         <input type="text" name="email" id="" placeholder="Enter patient email">
+         <input type="text" name="email" id="email1" placeholder="Enter doctor email">
 
          <br>
          <br>
          
-         <input type="text" name="password" id="" placeholder="Enter patient password">
+         <input type="text" name="password" id="password1" placeholder="Enter doctor password">
          <br>
          <br>
        
          <select id="role">
             <option value="">--select role---</option>
-            <option value="patien">patien</option>
+            <option value="patient">patient</option>
             <option value="doctor">doctor</option>
          </select>
          <br>
          <br>
          
-         <select name="" id="gender">
+         <select name="" id="gender1">
             <option value="">--select gender--</option>
             <option value="male">male</option>
             <option value="female">female</option>
@@ -104,7 +107,7 @@
          <br>
        
          
-         <select  id="speciality">
+         <select  id="speciality1">
             <option value="">--select specialty--</option>
             <option value="Neurology">Neurology</option>
             <option value="Ophthalmology">Ophthalmology</option>
@@ -116,7 +119,7 @@
          <br>
        
         
-          <input type="text" name="location" id="" placeholder="Enter patient location">
+          <input type="text" name="location" id="location1" placeholder="Enter doctor location">
           <br>
           <br>
          <input type="submit" name="" id="register" value="Register">

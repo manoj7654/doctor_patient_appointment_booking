@@ -29,8 +29,9 @@ async function loginUser(obj){
         if(result.message=="Login Successfuly"){
             sessionStorage.setItem("token",result.token);
             sessionStorage.setItem("role",result.role);
+            sessionStorage.setItem("email",result.email)
             alert(result.message);
-            window.location.href="./appointment.html";
+            window.location.href="./doctor.html";
         }else {
             alert(result.message)
         }

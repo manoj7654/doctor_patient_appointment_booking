@@ -1,4 +1,3 @@
-
 *{
     margin: 0;
     padding:0;
@@ -71,53 +70,83 @@
 #hamburger{
     display: none;
 }
-.design{
-    width: 40%;
+.doctor{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    height: auto;;
+    width: 90%;
     /* border: 1px solid red; */
     margin: auto;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-color: aqua;
-    padding-bottom: 30px;
-    padding-top: 30px;
-
-    border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
-h1{
+.card{
+    height: 200px;
+    width: auto;
+    /* border: 1px solid red; */
     text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
-.main2{
-    width: 50%;
-    /* border: 1px solid red; */
-    margin: auto;
- 
+.card h4{
+    margin-top: 10px;
 }
-
-
-form{
-    display: flex;
-    flex-direction:column ;
-    
-    
-}
-form input{
-    width: 95%;
-    margin: auto;
-    margin-top: 15px;
-    height: 30px;
-    
-}
-#btn{
-    width:260px;
-    height:30px;
-    font-size: 1rem;
+.appointment{
+    margin-top: 10px;
+    padding: 10px;
     background-color: blue;
     color:white;
+    font-size: 1.2rem;
     border: none;
-    cursor: pointer;;
     border-radius: 5px;
+    cursor: pointer;
 }
-#btn:hover{
+.appointment:hover{
     background-color: blueviolet;
 }
+#loginAlert {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    text-align: center;
+    width: 500px;
+    height: 300px;
+  }
+  
+  #closeBtn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  button {
+    margin-top: 20px;
+  }
+  #date{
+    height: 30px;
+    width: 165px;
+  }
+  #slot{
+    height: 30px;
+  }
+  #sub{
+    height: 30px;
+    width: 170px;
+    background-color: blue;
+    font-size: 1.2rem;
+    color:white;
+    border: none;
+    border-radius: 10px;
+  }
+  #sub:hover{
+  
+    cursor: pointer;
+  }

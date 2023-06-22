@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="./styles/login.css">
+    <title>Appointment</title>
+    <link rel="stylesheet" href="./styles/doctor.css">
 </head>
 <body>
     <div class="main">
@@ -38,18 +37,34 @@
         </header>
         
     </div>
-    <div class="design">
-        <h1>Login</h1>
-    <div class="main2">
-    <form class="log" >
-        <input type="email" name="" id="email" placeholder="Enter email">
-        <input type="password" name="" id="pass" placeholder="Enter password">
-       
-        <input type="submit" name="" id="btn" value="Submit">
+   <div class="doctor">
 
-    </form>
-    </div>
-    </div>
+   </div>
+   <div id="loginAlert">
+    <span id="closeBtn">&times;</span>
+    <h3>Booking</h3>
+     <form class="booked">
+        <input type="date"  id="date">
+         <br>
+         <br>
+        <select  id="slot">
+            <option value="9:30 AM to 10:30 AM">9:30 AM to 10:30 AM</option>
+            <option value="10:30 AM to 11:30 AM">10:30 AM to 11:30 AM</option>
+            <option value="12:00 PM to 01:00 PM">12:00 PM to 01:00 PM</option>
+            <option value="01:30 PM to 02:30 PM">01:30 PM to 02:30 PM</option>
+            <option value="02:30 PM to 03:30 PM">02:30 PM to 03:30 PM</option>
+            <option value="04:00 PM to 05:00 PM">04:00 PM to 05:00 PM</option>
+            <option value="05:00 PM to 06:00 PM">05:00 PM to 06:00 PM</option>
+            <option value="06:30 PM to 07:30 PM">06:30 PM to 07:30 PM</option>
+            <option value="08:00 PM to 09:00 PM">08:00 PM to 09:00 PM</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit" name="" id="sub" value="Book">
+     </form>
+  </div>
+  
+ 
 </body>
 </html>
-<script src="./src/login.js"></script>
+<script src="./src/doctor.js"></script>
