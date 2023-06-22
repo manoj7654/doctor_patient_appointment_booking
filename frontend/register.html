@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./styles/register.css">
+</head>
+<body>
+    <div class="main">
+        <header class="header">
+            <div class="logo">
+                <img src="https://www.linkpicture.com/q/Screenshot_2023-06-22-10-45-16-518_com.android.chrome-edit.jpg" alt="">
+            </div>
+            <input type="checkbox" id="hamburger">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="">Register</a></li>
+                </ul>
+                <ul>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+                <ul>
+                    <li><a href="appointment.html">Appointment</a></li>
+                </ul>
+                
+            </nav>
+            <div class="check">
+                <label for="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+        </header>
+    </div>
+    <div class="option">
+        <button class="patient">Patient</button>
+        <button class="doctor">Doctor</button>
+    </div>
+    <div id="patient">
+        <h1>Patient Register Form</h1>
+    <form action="">
+      
+     <input type="text" name="name" id="" placeholder="Enter patient name">
+     <br>
+     <br>
+   
+     <input type="text" name="email" id="" placeholder="Enter patient email">
+     <br>
+     <br>
+   
+     <input type="text" name="password" id="" placeholder="Enter password">
+     <br>
+     <br>
+     
+     <select name="" id="gender">
+        <option value="">--select gender--</option>
+        <option value="male">male</option>
+        <option value="female">female</option>
+        
+     </select>
+     <br>
+     <br>
+    
+      <input type="text" name="location" id="" placeholder="Enter patient location">
+      <br>
+      <br>
+     <input type="submit" name="" id="register" value="Register">
+    </form>
+    </div>
+    <div id="doctor">
+        <h1>Doctor Register Form</h1>
+        <form action="">
+      
+         <input type="text" name="name" id="" placeholder="Enter patient name">
+         <br>
+         <br>
+         
+         <input type="text" name="email" id="" placeholder="Enter patient email">
+
+         <br>
+         <br>
+         
+         <input type="text" name="password" id="" placeholder="Enter patient password">
+         <br>
+         <br>
+       
+         <select id="role">
+            <option value="">--select role---</option>
+            <option value="patien">patien</option>
+            <option value="doctor">doctor</option>
+         </select>
+         <br>
+         <br>
+         
+         <select name="" id="gender">
+            <option value="">--select gender--</option>
+            <option value="male">male</option>
+            <option value="female">female</option>
+            
+         </select>
+         <br>
+         <br>
+       
+         
+         <select  id="speciality">
+            <option value="">--select specialty--</option>
+            <option value="Neurology">Neurology</option>
+            <option value="Ophthalmology">Ophthalmology</option>
+            <option value="Psychiatrist">Psychiatrist</option>
+            <option value="Neurologist">Neurologist</option>
+            <option value="Surgeon">Surgeon</option>
+         </select>
+         <br>
+         <br>
+       
+        
+          <input type="text" name="location" id="" placeholder="Enter patient location">
+          <br>
+          <br>
+         <input type="submit" name="" id="register" value="Register">
+        </form>
+        </div>
+</body>
+</html>
+
+<script src="./src/register.js"></script>

@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+
+}
+
+.main{
+    height: 100px;
+   
+    /* background-color: aqua; */
+    border: 1px solid grey;
+   
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid grey; */
+    height: 100px;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    /* background-color: aqua; */
+   
+}
+.logo img{
+    width: 25%;
+    color: aqua;
+}
+.navbar{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    font-size: 2rem;
+    /* background-color: blue; */
+   
+}
+.navbar ul li{
+    padding:0px 20px
+}
+.navbar ul li a{
+    color:black;
+}
+.check label{
+    display: flex;
+    flex-direction: column;
+    gap:0.2rem;
+    align-items: center;
+}
+.check label span{
+    background-color: rgb(162, 224, 61);
+    padding:0.2rem 0.7rem
+}
+.check{
+    display: none;
+}
+#hamburger{
+    display: none;
+}
+.option{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    width: 300px;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 50px;
+}
+.option button{
+    width: 140px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    background-color: grey;
+    color:white;
+    cursor: pointer;
+}
+#patient{
+   
+    height: auto;
+    width: 40%;
+    margin: auto;
+    /* border: 1px solid red; */
+    border-radius: 5px;
+    background-color: aqua;
+    margin-top: 50px;
+}
+#patient form{
+    height: auto;
+  
+    margin: auto;
+
+ padding:10px 20px;
+ text-align: center;
+
+}
+#patient form input{
+    padding: 5px;
+    width: 250px;
+}
+ lable{
+    text-align: left;
+}
+#gender{
+    width: 250px;
+}
+#patient h1{
+   text-align: center;
+}
+#register{
+    font-size: 1.2rem;
+    background-color: blue;
+    color:white;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+#doctor{
+   
+    height: auto;
+    width: 40%;
+    margin: auto;
+    /* border: 1px solid red; */
+    border-radius: 5px;
+    background-color: aqua;
+    margin-top: 50px;
+}
+#doctor form{
+    height: auto;
+  
+    margin: auto;
+
+ padding:10px 20px;
+ text-align: center;
+
+}
+#doctor form input{
+    padding: 5px;
+    width: 250px;
+}
+ lable{
+    text-align: left;
+}
+#gender{
+    width: 250px;
+}
+#doctor h1{
+   text-align: center;
+}
+#role{
+    width: 250px;
+}
+#speciality{
+    width: 250px;
+}
