@@ -4,10 +4,10 @@ const fetchDoctor=document.querySelector(".doctor");
 // here fetching all the doctors data
 async function fetchData(){
     try {
-        const result=await fetch("https://doctor-patient-ufir.onrender.com/users/doctors");
+        const result=await fetch("https://fair-pear-wildebeest-tutu.cyclic.app/users/doctors");
         const res=await result.json();
         rederData(res)
-        console.log(res)
+        // console.log(res)
     } catch (error) {
         console.log(error)
     }
@@ -16,7 +16,7 @@ fetchData()
 
 // here rendering all the doctors data
 function rederData(res){
-console.log(res)
+// console.log(res)
 fetchDoctor.innerHTML="";
 const result=res.map((ele)=>{
     return `
@@ -100,7 +100,7 @@ if(!token){
 // booking creating  here
 async function bookingSlots(obj){
     try {
-        const booking=await fetch("https://doctor-patient-ufir.onrender.com/bookings/create",{
+        const booking=await fetch("https://fair-pear-wildebeest-tutu.cyclic.app/bookings/create",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json",

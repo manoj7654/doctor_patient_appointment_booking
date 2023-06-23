@@ -16,7 +16,7 @@ formLogin.addEventListener("submit",(e)=>{
 async function loginUser(obj){
     console.log(obj)
     try {
-        let res=await fetch("https://doctor-patient-ufir.onrender.com/users/login",{
+        let res=await fetch("https://fair-pear-wildebeest-tutu.cyclic.app/users/login",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"
@@ -30,7 +30,7 @@ async function loginUser(obj){
             sessionStorage.setItem("role",result.role);
             sessionStorage.setItem("name",result.name)
             sessionStorage.setItem("email",result.email)
-            sessionStorage.setItem("userID",result.userId)
+            sessionStorage.setItem("userID",result.useID)
             alert(result.message);
             window.location.href="./doctor.html";
         }else {

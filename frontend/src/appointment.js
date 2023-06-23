@@ -8,7 +8,7 @@ const token = sessionStorage.getItem("token");
 if (token) {
   async function fetchBooking() {
     try {
-      const result = await fetch(`https://doctor-patient-ufir.onrender.com/bookings/singleUser`, {
+      const result = await fetch(`https://fair-pear-wildebeest-tutu.cyclic.app/bookings/singleUser`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -16,7 +16,7 @@ if (token) {
         },
       });
       let res = await result.json();
-      console.log(res);
+    //   console.log(res);
       displayBooking(res.Data, name, role, token);
     } catch (error) {
       console.log(error);
@@ -61,7 +61,7 @@ if (token) {
   // for deleting particular user not doctor
   async function cancelAppointment(ID, token) {
     try {
-      let res = await fetch(`https://doctor-patient-ufir.onrender.com/bookings/delete/${ID}`, {
+      let res = await fetch(`https://fair-pear-wildebeest-tutu.cyclic.app/bookings/delete/${ID}`, {
         method: "DELETE",
         headers: {
           "Content-type": "application/json",
