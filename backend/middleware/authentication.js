@@ -14,11 +14,14 @@ const authenticate=(req,res,next)=>{
         try {
             const decode=jwt.verify(token,"masai");
                 if(decode){
-                    const userRole=decode.role
-                    req.body.userrole=userRole
+                    const role=decode.role
+                    req.body.role=role
                     // console.log(userRole)
                     const userID=decode.userID
                     req.body.userID=userID
+                    console.log(userID)
+                    const email=decode.email
+                    req.body.email=email
                     // console.log(userID)
                     next()
         
