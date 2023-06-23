@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+
+}
+
+.main{
+    height: 70px;
+   
+    /* background-color: aqua; */
+    /* border: 1px solid red; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color:darkgrey;
+    border-radius: 5px;
+   
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid grey; */
+    height: 50px;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+
+    /* background-color: aqua; */
+   
+}
+.logo img{
+    width: 15%;
+   margin-top: 15px;
+}
+.navbar{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    font-size: 2rem;
+    /* background-color: blue; */
+    margin-top: 10px;
+   
+}
+.navbar ul li{
+    padding:0px 20px
+}
+.navbar ul li :hover{
+    background-color: rgb(163, 156, 156);
+    border-radius: 10px;
+
+}
+.navbar ul li a{
+    color:black;
+}
+.check label{
+    display: flex;
+    flex-direction: column;
+    gap:0.2rem;
+    align-items: center;
+}
+.check label span{
+    background-color: rgb(162, 224, 61);
+    padding:0.2rem 0.7rem
+}
+.check{
+    display: none;
+}
+#hamburger{
+    display: none;
+}
+.app{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    height: auto;;
+    width: 90%;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 30px;
+}
+.app h1{
+    text-align: center;
+}
+.card{
+    height: auto;
+    width: auto;
+    /* border: 1px solid red; */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding-bottom: 20px;
+    /* margin-top: 50px; */
+}
+.card h4{
+    margin-top: 10px;
+}
+.card img{
+    width: 40%;
+    height: 150px;
+    border-radius: 50%;
+}
+.video{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: blue;
+    color:white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.video:hover{
+    background-color: blueviolet;
+}
+.cancel{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: red;
+    color:white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

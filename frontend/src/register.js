@@ -17,7 +17,6 @@ doctor.addEventListener("click",()=>{
     patientForm.style.display="none"
     doctorForm.style.display = "block";
     
-   
 })
 
 // for patient registration form 
@@ -34,7 +33,7 @@ form1.addEventListener("submit",(e)=>{
     let obj={
         name,email,password,gender,location
     }
-    console.log(obj)
+    // console.log(obj)
     postPatient(obj)
 })
 async function postPatient(obj){
@@ -60,11 +59,6 @@ async function postPatient(obj){
 }
 
 
-
-
-
-
-
 // for Doctor registration form
 let form2=document.getElementById("form2");
 
@@ -82,7 +76,7 @@ form2.addEventListener("submit",(e)=>{
     let obj2={
         name,email,password,role,gender,specialty,location
     }
-    console.log(obj2)
+    // console.log(obj2)
     postDoctor(obj2)
 })
 

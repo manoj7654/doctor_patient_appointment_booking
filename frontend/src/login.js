@@ -1,4 +1,3 @@
-let baseUrl=``;
 
 let formLogin=document.querySelector("form");
 
@@ -29,7 +28,9 @@ async function loginUser(obj){
         if(result.message=="Login Successfuly"){
             sessionStorage.setItem("token",result.token);
             sessionStorage.setItem("role",result.role);
+            sessionStorage.setItem("name",result.name)
             sessionStorage.setItem("email",result.email)
+            sessionStorage.setItem("userID",result.userId)
             alert(result.message);
             window.location.href="./doctor.html";
         }else {
