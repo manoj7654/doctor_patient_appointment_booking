@@ -8,7 +8,7 @@ const token = sessionStorage.getItem("token");
 if (token) {
   async function fetchBooking() {
     try {
-      const result = await fetch(`http://localhost:8080/bookings/singleUser`, {
+      const result = await fetch(`https://doctor-patient-ufir.onrender.com/bookings/singleUser`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -61,7 +61,7 @@ if (token) {
   // for deleting particular user not doctor
   async function cancelAppointment(ID, token) {
     try {
-      let res = await fetch(`http://localhost:8080/bookings/delete/${ID}`, {
+      let res = await fetch(`https://doctor-patient-ufir.onrender.com/bookings/delete/${ID}`, {
         method: "DELETE",
         headers: {
           "Content-type": "application/json",

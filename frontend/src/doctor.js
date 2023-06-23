@@ -4,7 +4,7 @@ const fetchDoctor=document.querySelector(".doctor");
 // here fetching all the doctors data
 async function fetchData(){
     try {
-        const result=await fetch("http://localhost:8080/users/doctors");
+        const result=await fetch("https://doctor-patient-ufir.onrender.com/users/doctors");
         const res=await result.json();
         rederData(res)
         console.log(res)
@@ -100,7 +100,7 @@ if(!token){
 // booking creating  here
 async function bookingSlots(obj){
     try {
-        const booking=await fetch("http://localhost:8080/bookings/create",{
+        const booking=await fetch("https://doctor-patient-ufir.onrender.com/bookings/create",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json",
