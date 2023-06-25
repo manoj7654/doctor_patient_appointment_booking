@@ -16,7 +16,7 @@ formLogin.addEventListener("submit",(e)=>{
 async function loginUser(obj){
     console.log(obj)
     try {
-        let res=await fetch("https://fair-pear-wildebeest-tutu.cyclic.app/users/login",{
+        let res=await fetch("http://localhost:8080/users/login",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"

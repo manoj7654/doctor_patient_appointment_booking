@@ -1,89 +1,157 @@
-*{
+/* index.css */
+
+/* Reset styles */
+* {
     margin: 0;
-    padding:0;
-    list-style: none;
-    text-decoration: none;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 0;
     box-sizing: border-box;
-
-}
-
-.main{
-    height: 70px;
-   
-    /* background-color: aqua; */
-    /* border: 1px solid red; */
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    color:darkgrey;
-    border-radius: 5px;
-   
-}
-.header{
+  }
+  
+  /* Body styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
     display: flex;
-    justify-content: space-between;
-    /* border: 1px solid grey; */
-    height: 50px;
-    align-items: center;
-    width: 90%;
-    margin: auto;
-
-    /* background-color: aqua; */
-   
-}
-.logo img{
-    width: 15%;
-   margin-top: 15px;
-}
-.navbar{
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
-    /* border: 1px solid red; */
-    font-size: 2rem;
-    /* background-color: blue; */
-    margin-top: 10px;
-   
-}
-.navbar ul li{
-    padding:0px 20px
-}
-.navbar ul li :hover{
-    background-color: rgb(163, 156, 156);
-    border-radius: 10px;
-
-}
-.navbar ul li a{
-    color:black;
-}
-.check label{
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  nav ul li a.active {
+    font-weight: bold;
+  }
+  
+  /* Hero section styles */
+  .hero {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #555;
+  }
+  
+  /* Features section styles */
+  .features {
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .features h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+  
+  .feature-card {
     display: flex;
     flex-direction: column;
-    gap:0.2rem;
     align-items: center;
-}
-.check label span{
-    background-color: rgb(162, 224, 61);
-    padding:0.2rem 0.7rem
-}
-.check{
-    display: none;
-}
-#hamburger{
-    display: none;
-}
-#second{
-    height: 600px;
+    margin-bottom: 40px;
+  }
   
-    margin-top: 10px;
-    background-image: url("https://images.unsplash.com/photo-1538108149393-fbbd81895907?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80");
-    background-size: cover;
+  .feature-card img {
+    width: 50%;
   
-}
-#second h1{
+    margin-bottom: 20px;
+  }
   
+  .feature-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .feature-card p {
+    font-size: 16px;
+  }
+  
+  /* About section styles */
+  .about {
+    background-color: #f9f9f9;
+    padding: 60px 0;
     text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+  
+  .about p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .doctor_card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: auto;
+    gap:20px;
+    width: 80%;
+    margin: auto;
     /* border: 1px solid red; */
-    padding-top: 280px;
-    color:blue
-    
-}
+    margin-top: 20px;
+  }
+  .doctor_slot{
+    height: auto;
+    width: 100%;
+    /* border: 1px solid red; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .doctor_slot img{
+    width: 50%;
+    border-radius: 50%;
+  }

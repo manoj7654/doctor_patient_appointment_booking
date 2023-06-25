@@ -4,39 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Appointment</title>
-    <link rel="stylesheet" href="./styles/doctor.css">
+    <link rel="stylesheet" href="../styles//doctor.css">
 </head>
 <body>
-    <div class="main">
-        <header class="header">
-            <div class="logo">
-               <a href="index.html"> <img src="https://www.linkpicture.com/q/Screenshot_2023-06-22-10-45-16-518_com.android.chrome-edit.jpg" alt=""></a>
-            </div>
-            <input type="checkbox" id="hamburger">
-            <nav class="navbar">
-                <ul>
-                    <li><a href="register.html">Register</a></li>
-                </ul>
-                <ul>
-                    <li><a href="login.html">Login</a></li>
-                </ul>
-                <ul>
-                    <li><a href="doctor.html">Doctor</a></li>
-                </ul>
-                <ul>
-                    <li><a href="appointment.html">Appointment</a></li>
-                </ul>
-            </nav>
-            <div class="check">
-                <label for="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </label>
-            </div>
-        </header>
-        
-    </div>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="../index.html" class="active">Home</a></li>
+            <li><a href=".register.html">Signup</a></li>
+            <li><a href="./login.html">Login</a></li>
+            <li><a href="./appointment.html">Appointments</a></li>
+            <li><a href="./doctor.html">Doctors</a></li>
+     
+          </ul>
+        </nav>
+      </header>
    <div class="doctor">
 
    </div>
@@ -48,6 +30,7 @@
          <br>
          <br>
         <select  id="slot">
+            <option value="">Choose Slots</option>
             <option value="9:30 AM to 10:30 AM">9:30 AM to 10:30 AM</option>
             <option value="10:30 AM to 11:30 AM">10:30 AM to 11:30 AM</option>
             <option value="12:00 PM to 01:00 PM">12:00 PM to 01:00 PM</option>
@@ -67,4 +50,4 @@
  
 </body>
 </html>
-<script src="./src/doctor.js"></script>
+<script src="../src/doctor.js"></script>

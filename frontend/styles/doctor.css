@@ -1,75 +1,41 @@
-*{
+* {
     margin: 0;
-    padding:0;
-    list-style: none;
-    text-decoration: none;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 0;
     box-sizing: border-box;
-
-}
-
-.main{
-    height: 70px;
-   
-    /* background-color: aqua; */
-    /* border: 1px solid red; */
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    color:darkgrey;
-    border-radius: 5px;
-   
-}
-.header{
+  }
+  
+  /* Body styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
     display: flex;
-    justify-content: space-between;
-    /* border: 1px solid grey; */
-    height: 50px;
-    align-items: center;
-    width: 90%;
-    margin: auto;
-
-    /* background-color: aqua; */
-   
-}
-.logo img{
-    width: 15%;
-   margin-top: 15px;
-}
-.navbar{
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
-    /* border: 1px solid red; */
-    font-size: 2rem;
-    /* background-color: blue; */
-   
-}
-.navbar ul li{
-    padding:0px 20px
-}
-.navbar ul li :hover{
-    background-color: rgb(163, 156, 156);
-    border-radius: 10px;
-
-}
-.navbar ul li a{
-    color:black;
-}
-.check label{
-    display: flex;
-    flex-direction: column;
-    gap:0.2rem;
-    align-items: center;
-}
-.check label span{
-    background-color: rgb(162, 224, 61);
-    padding:0.2rem 0.7rem
-}
-.check{
-    display: none;
-}
-#hamburger{
-    display: none;
-}
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  nav ul li a.active {
+    font-weight: bold;
+  }
+  
 .doctor{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -116,14 +82,14 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #f8d7da;
-    color: #721c24;
+    background-color: #f4f4f4;
+    color: #7e7576;
     padding: 10px;
     border: 1px solid #f5c6cb;
     border-radius: 4px;
     text-align: center;
     width: 500px;
-    height: 300px;
+    height: 200px;
   }
   
   #closeBtn {
@@ -131,6 +97,10 @@
     top: 5px;
     right: 10px;
     cursor: pointer;
+    color:red;
+  }
+  #loginAlert h3{
+    color: green;
   }
   
   button {
@@ -146,7 +116,7 @@
   #sub{
     height: 30px;
     width: 170px;
-    background-color: blue;
+    background-color: green;
     font-size: 1.2rem;
     color:white;
     border: none;

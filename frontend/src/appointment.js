@@ -8,7 +8,7 @@ const token = sessionStorage.getItem("token");
 if (token) {
   async function fetchBooking() {
     try {
-      const result = await fetch(`https://fair-pear-wildebeest-tutu.cyclic.app/bookings/singleUser`, {
+      const result = await fetch(`http://localhost:8080/bookings/singleUser`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -28,7 +28,7 @@ if (token) {
   function displayBooking(Data, name, role, token) {
     const render = document.querySelector(".app");
     render.innerHTML = "";
-    
+
     const result = Data.map((ele) => {
       
       return `
@@ -49,19 +49,28 @@ if (token) {
     render.innerHTML = result.join("");
     let cancelBtns = document.querySelectorAll(".cancel");
 
-    for (let Btn of cancelBtns) {
-      Btn.addEventListener("click", (e) => {
+    for (let cancelBtn of cancelBtns) {
+      cancelBtn.addEventListener("click", (e) => {
         let ID = e.target.dataset.id;
         console.log(ID);
         cancelAppointment(ID, token);
       });
+    }
+
+    let videoBtns=document.querySelectorAll(".video");
+    for(let videoBtn of videoBtns){
+      videoBtn.addEventListener("click",(e)=>{
+        let appointmentID=e.target.dataset.id
+        console.log(appointmentID)
+        startVideoCall(appointmentID)
+      })
     }
   }
 
   // for deleting particular user not doctor
   async function cancelAppointment(ID, token) {
     try {
-      let res = await fetch(`https://fair-pear-wildebeest-tutu.cyclic.app/bookings/delete/${ID}`, {
+      let res = await fetch(`http://localhost:8080/bookings/delete/${ID}`, {
         method: "DELETE",
         headers: {
           "Content-type": "application/json",
@@ -69,19 +78,30 @@ if (token) {
         },
       });
       let result = await res.json();
+      console.log(result)
     //   console.log(result);
-      if (result.msg == `booking id of ${ID} is deleted succesfully`) {
-        fetchBooking();
+      if (result.msg == `booking id of ${ID} is cancelled succesfully`) {
         alert(`Your Booking Successfully Cancelled`);
+        fetchBooking();
       } else {
         alert(result.msg);
       }
     } catch (error) {
       console.log(error);
-      alert(result.msg);
+      alert("Something went wrong while Canceling booking");
     }
   }
 } else {
   alert("Login First to Access this Page");
   window.location.href = "./login.html";
+}
+async function startVideoCall(appointmentID) {
+  try {
+     
+      let start=`http://localhost:8080/${appointmentID}`;
+      window.open(start, "_blank");
+  } catch (error) {
+      console.log(error.message);
+      alert("Unable to start video call with doctor");
+  }
 }

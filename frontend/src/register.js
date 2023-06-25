@@ -38,7 +38,7 @@ form1.addEventListener("submit",(e)=>{
 })
 async function postPatient(obj){
     try {
-        const result1=await fetch("https://fair-pear-wildebeest-tutu.cyclic.app/users/register",{
+        const result1=await fetch("http://localhost:8080/users/register",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"
@@ -82,7 +82,7 @@ form2.addEventListener("submit",(e)=>{
 
 async function postDoctor(obj2){
     try {
-        const result=await fetch("https://fair-pear-wildebeest-tutu.cyclic.app/users/register",{
+        const result=await fetch("http://localhost:8080/users/register",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"
