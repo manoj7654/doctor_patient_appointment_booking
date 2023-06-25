@@ -29,16 +29,19 @@ form1.addEventListener("submit",(e)=>{
     let password=document.getElementById("password").value
     let gender=document.getElementById("gender").value
     let location=document.getElementById("location").value
-
+    if(name==""||email==""||password==""||gender==""||location==""){
+        alert("Please fill all the details")
+    } else{
     let obj={
         name,email,password,gender,location
     }
     // console.log(obj)
     postPatient(obj)
+}
 })
 async function postPatient(obj){
     try {
-        const result1=await fetch("http://localhost:8080/users/register",{
+        const result1=await fetch("https://doctor-patient-ufir.onrender.com/users/register",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"
@@ -72,12 +75,18 @@ form2.addEventListener("submit",(e)=>{
     let specialty=document.getElementById("speciality1").value
     let location=document.getElementById("location1").value
 
-
-    let obj2={
-        name,email,password,role,gender,specialty,location
+    if(name==""||email==""||password==""||role==""||gender==""||specialty==""||location==""){
+        alert("Please fill all the details")
+    } else{
+        let obj2={
+            name,email,password,role,gender,specialty,location
+        }
+        // console.log(obj2)
+        postDoctor(obj2)
     }
-    // console.log(obj2)
-    postDoctor(obj2)
+
+  
+    
 })
 
 async function postDoctor(obj2){

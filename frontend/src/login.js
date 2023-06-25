@@ -5,16 +5,21 @@ formLogin.addEventListener("submit",(e)=>{
     e.preventDefault();
     let email=document.getElementById("email").value;
     let password=document.getElementById("pass").value;
-    let obj={
-        email,
-        password
+
+    if(email==""||password==""){
+        alert("Please enter email and password")
+    }else{
+        let obj={
+            email,
+            password
+        }
+        loginUser(obj);
     }
-    loginUser(obj);
   
 })
 
 async function loginUser(obj){
-    console.log(obj)
+    // console.log(obj)
     try {
         let res=await fetch("https://doctor-patient-ufir.onrender.com/users/login",{
             method:"POST",

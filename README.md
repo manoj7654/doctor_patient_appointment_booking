@@ -3,11 +3,11 @@ Pococare's video consultancy with doctors feature provides users with convenient
 
 # Important Note: Video Call Functionality Limitations
 
-⚠️ Video call functionality is currently limited in the deployed version. For the best experience, clone the repository and run the application locally.
+* Video call functionality is currently limited in the deployed version. For the best experience, clone the repository and run the application locally.
 
-🚀 Why is it not working? Hosting service providers allow only one server on a specific port, preventing seamless peer-to-peer connections. Thus, only one person's video will be rendered in the deployed version.
+* Why is it not working? Hosting service providers allow only one server on a specific port, preventing seamless peer-to-peer connections. Thus, only one person's video will be rendered in the deployed version.
 
-💡 How to make it work perfectly?
+*  How to make it work perfectly and make communication between doctors and patiens
 
 Clone the repository.
 
@@ -247,7 +247,6 @@ Utility functions:
 
 # Deployed Link
   ## Front-End : It is deployed on the netlify
-     https://64954432c117a74821a3cbfb--euphonious-cat-a3b887.netlify.app/
-
+  [LIVE]("https://euphonious-cat-a3b887.netlify.app/")
  ## Back-End : It is deployed on the render
-      https://doctor-patient-ufir.onrender.com/
+  [Github]("https://doctor-patient-ufir.onrender.com/")
