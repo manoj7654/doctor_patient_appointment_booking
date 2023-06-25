@@ -247,9 +247,9 @@ Utility functions:
 
 # Deployed Link
   ## Front-End : It is deployed on the netlify
-       https://euphonious-cat-a3b887.netlify.app/
+ [FrontEnd Deployment](https://euphonious-cat-a3b887.netlify.app/)
  ## Back-End : It is deployed on the render
-          https://doctor-patient-ufir.onrender.com/
+[Backend Deployment](https://doctor-patient-ufir.onrender.com/)
 
 # Video Link
          
