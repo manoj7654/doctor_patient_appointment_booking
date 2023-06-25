@@ -8,7 +8,7 @@ const token = sessionStorage.getItem("token");
 if (token) {
   async function fetchBooking() {
     try {
-      const result = await fetch(`http://localhost:8080/bookings/singleUser`, {
+      const result = await fetch(`https://doctor-patient-ufir.onrender.com/bookings/singleUser`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -52,7 +52,7 @@ if (token) {
     for (let cancelBtn of cancelBtns) {
       cancelBtn.addEventListener("click", (e) => {
         let ID = e.target.dataset.id;
-        console.log(ID);
+        // console.log(ID);
         cancelAppointment(ID, token);
       });
     }
@@ -70,7 +70,7 @@ if (token) {
   // for deleting particular user not doctor
   async function cancelAppointment(ID, token) {
     try {
-      let res = await fetch(`http://localhost:8080/bookings/delete/${ID}`, {
+      let res = await fetch(`https://doctor-patient-ufir.onrender.com/bookings/delete/${ID}`, {
         method: "DELETE",
         headers: {
           "Content-type": "application/json",
@@ -78,11 +78,12 @@ if (token) {
         },
       });
       let result = await res.json();
-      console.log(result)
+      // console.log(result)
     //   console.log(result);
-      if (result.msg == `booking id of ${ID} is cancelled succesfully`) {
-        alert(`Your Booking Successfully Cancelled`);
-        fetchBooking();
+      if (res.ok) {
+        alert("Your appointment cancelation successfull");
+        // fetchBooking();
+        window.location.href="../html/appointment.html"
       } else {
         alert(result.msg);
       }
@@ -98,7 +99,7 @@ if (token) {
 async function startVideoCall(appointmentID) {
   try {
      
-      let start=`http://localhost:8080/${appointmentID}`;
+      let start=`https://doctor-patient-ufir.onrender.com/${appointmentID}`;
       window.open(start, "_blank");
   } catch (error) {
       console.log(error.message);
