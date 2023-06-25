@@ -7,7 +7,7 @@ Pococare's video consultancy with doctors feature provides users with convenient
 
 * Why is it not working? Hosting service providers allow only one server on a specific port, preventing seamless peer-to-peer connections. Thus, only one person's video will be rendered in the deployed version.
 
-*  How to make it work perfectly and make communication between doctors and patiens
+*  How to make it work perfectly and make communication between doctors and patients
 
 Clone the repository.
 
@@ -253,4 +253,4 @@ Utility functions:
 
 # Video Link
          
-             https://www.youtube.com/watch?v=jg8fWrtXmls
+[Output Presentation Video](https://www.youtube.com/watch?v=jg8fWrtXmls)
