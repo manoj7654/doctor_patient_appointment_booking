@@ -60,7 +60,7 @@ navigator.mediaDevices.getUserMedia({
         }
     }
 //======================================================================================
-socket.on('user-connected', userId => {
+socket.on('userConnected', userId => {
     connectToNewUser(userId, stream);
 });
 })
@@ -68,7 +68,7 @@ socket.on('user-connected', userId => {
 myPeer.on('open', id => {
 socket.emit('join-room', ROOM_ID, id);
 });
-socket.on('user-disconnected', userId => {
+socket.on('userDisconnected', userId => {
     if (peers[userId]) {
         peers[userId].close();
     }

@@ -1,5 +1,27 @@
-# Medikit
-Medikit is an innovative online platform that simplifies the process of booking appointments with doctors and enables video calling for remote healthcare consultations. With the aim of enhancing accessibility and convenience in healthcare services, Medikit provides a user-friendly interface that connects patients with a wide range of medical professionals.
+# Pococare
+Pococare's video consultancy with doctors feature provides users with convenient and accessible virtual medical consultations. With this feature, users can connect with healthcare professionals through secure video calls for personalized healthcare advice and guidance.
+
+# Important Note: Video Call Functionality Limitations
+
+⚠️ Video call functionality is currently limited in the deployed version. For the best experience, clone the repository and run the application locally.
+
+🚀 Why is it not working? Hosting service providers allow only one server on a specific port, preventing seamless peer-to-peer connections. Thus, only one person's video will be rendered in the deployed version.
+
+💡 How to make it work perfectly?
+
+Clone the repository.
+
+    git clone https://github.com/manoj7654/doctor_patient_appointment_booking.git
+* Install dependencies: 
+
+       cd backend & npm install.
+* Start Node.js server: npm run server.
+* Start Peer server on a separate port: peerjs --port 3001.
+* Access the application locally: 
+
+         http://localhost: <your-port>
+* By running the application locally, you ensure separate ports for the Node.js and Peer servers, enabling successful peer-to-peer video communication.
+
 
 # Credential :
  ## Dcotor :
@@ -32,9 +54,13 @@ Medikit is an innovative online platform that simplifies the process of booking 
 * jsonwebtoken: Library for generating and verifying JSON Web Tokens (JWT).
 * bcrypt: Library
 nodemailer: To send Email notification
+* peerjs : For making connection between doctor and patient during video conference.
 
 # Start the server
     npm run server
+
+# For run the peerjs server
+    peerjs --port 3001
 
 # Code Structure 
  For code structure i used mvc structure
@@ -176,10 +202,52 @@ nodemailer: To send Email notification
  * Parameter : ID of the booking 
  * Response : If role is doctor then it will deleted other wise throw an error you are not authorized.
 
+# Video Call Features
+ ## HTML Structure :
+ * video_grid: Container for displaying video streams of participants.
+ * btns_div: Container for toggle buttons to control audio and video streams.
+* audio: Button to toggle the user's audio stream.
+* camera: Button to toggle the user's video stream.
+## JavaScript Implementation
+ 1.Establishing a connection:
+
+ * Create a WebSocket connection using io function.
+Initialize a Peer object with the server host and port.
+Accessing user's media streams:
+
+ * Request access to the user's audio and video streams using getUserMedia.
+* Create a video element to display the user's video stream.
+* Mute the user's video stream.
+* Adding user's own video stream:
+
+* Add the user's video stream to the video_grid container.
+Handling incoming calls:
+
+* Answer incoming calls and display the caller's video stream.
+Toggling audio and video streams:
+
+* Add event listeners to the audio and camera buttons.
+Toggle the user's audio stream.
+Toggle the user's video stream.
+Update button colors based on toggle state.
+Handling user connections:
+
+* Handle new user connections and establish call connections.
+Joining the video call room:
+
+* Send a join-room event to the server with room ID and user ID.
+## Handling user disconnections:
+
+* Handle user disconnections and close call connections.
+Utility functions:
+
+* addVideoStream(video, stream): Add video stream to the video_grid.
+* OnOffAudio(state): Enable/disable audio track.
+* OnOffVideo(state): Enable/disable video track.
 
 # Deployed Link
   ## Front-End : It is deployed on the netlify
      https://64954432c117a74821a3cbfb--euphonious-cat-a3b887.netlify.app/
 
- ## Back-End : It is deployed on the cyclic
-      https://fair-pear-wildebeest-tutu.cyclic.app/
+ ## Back-End : It is deployed on the render
+      https://doctor-patient-ufir.onrender.com/
