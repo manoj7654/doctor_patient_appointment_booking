@@ -81,7 +81,7 @@ if (token) {
       // console.log(result)
     //   console.log(result);
       if (res.ok) {
-        alert("Your appointment cancelation successfull");
+        alert(result.msg);
         // fetchBooking();
         window.location.href="../html/appointment.html"
       } else {
