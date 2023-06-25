@@ -247,6 +247,6 @@ Utility functions:
 
 # Deployed Link
   ## Front-End : It is deployed on the netlify
-  [LIVE]("https://euphonious-cat-a3b887.netlify.app/")
+       https://euphonious-cat-a3b887.netlify.app/
  ## Back-End : It is deployed on the render
-  [Github]("https://doctor-patient-ufir.onrender.com/")
+          https://doctor-patient-ufir.onrender.com/
